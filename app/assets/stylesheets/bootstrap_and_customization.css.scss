@@ -1,8 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Glegoo';
+
+
 $body-bg: #bdc3c7;
-$navbar-inverse-bg: #2c3e50;
-$navbar-inverse-color: #2c3e50;
-$navbar-inverse-link-color: #ecf0f1;
+$font-family-sans-serif: 'Dosis','Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-inverse-bg: #ecf0f1;
+$navbar-inverse-color: #ecf0f1;
+$navbar-inverse-link-color: #2c3e50;
 $brand-primary: #27ae60;
-$jumbotron-bg: #e74c3c; 
+$jumbotron-bg: #ecf0f1; 
 
 @import 'bootstrap';
