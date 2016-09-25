@@ -2,7 +2,8 @@
 <div class="panel panel-default">
 
   <div class="panel-heading">
-    <h1 class="panel-title">Change your password</h1>
+    <div class="panel-title"><h1>Change your password</h1>
+    </div>
   </div>
 
   <div class="panel-body">
@@ -12,7 +13,7 @@
       <%= devise_error_messages! %>
       <%= f.hidden_field :reset_password_token %>
 
-      <div class="field">
+      <div class="form-group">
         <%= f.label :password, "New password" %><br />
         <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em><br />
@@ -20,12 +21,12 @@
         <%= f.password_field :password, autofocus: true, autocomplete: "off" %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= f.label :password_confirmation, "Confirm new password" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
-      <div class="actions">
+      <div class="form-group">
         <%= f.submit "Change my password" %>
       </div>
     <% end %>
