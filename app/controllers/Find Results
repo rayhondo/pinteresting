@@ -1,0 +1,45 @@
+Searching 558 files for "validate"
+
+/Users/hondo/Desktop/pinteresting/config/initializers/devise.rb:
+  143    # config.remember_for = 2.weeks
+  144  
+  145:   # Invalidates all the remember me tokens when the user signs out.
+  146    config.expire_all_remember_me_on_sign_out = true
+  147  
+  ...
+  157    config.password_length = 6..128
+  158  
+  159:   # Email regex used to validate email formats. It simply asserts that
+  160    # one (and only one) @ exists in the given string. This is mainly
+  161    # to give user feedback and not to assert the e-mail validity.
+
+2 matches in 1 file
+
+
+Searching 558 files for "validat"
+
+/Users/hondo/Desktop/pinteresting/app/models/user.rb:
+    3    # :confirmable, :lockable, :timeoutable and :omniauthable
+    4    devise :database_authenticatable, :registerable,
+    5:          :recoverable, :rememberable, :trackable, :validatable
+    6  
+    7    has_many :pins
+
+/Users/hondo/Desktop/pinteresting/config/initializers/devise.rb:
+  143    # config.remember_for = 2.weeks
+  144  
+  145:   # Invalidates all the remember me tokens when the user signs out.
+  146    config.expire_all_remember_me_on_sign_out = true
+  147  
+  ...
+  153    # config.rememberable_options = {}
+  154  
+  155:   # ==> Configuration for :validatable
+  156    # Range for password length.
+  157    config.password_length = 6..128
+  158  
+  159:   # Email regex used to validate email formats. It simply asserts that
+  160    # one (and only one) @ exists in the given string. This is mainly
+  161    # to give user feedback and not to assert the e-mail validity.
+
+4 matches across 2 files
