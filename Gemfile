@@ -33,6 +33,7 @@ gem 'devise', '~> 4.2.0'
 gem 'aws-sdk', '~> 2.0'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
 	gem 'sqlite3'
