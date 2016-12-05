@@ -30,8 +30,9 @@ gem 'bcrypt', '~> 3.1.11'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.2.0'
-gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 2.0'
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
 
 group :development, :test do
 	gem 'sqlite3'
