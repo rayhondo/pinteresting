@@ -4,6 +4,6 @@
 
 $ ->
 	$('#pins').imagesLoaded ->
-		$('#pins').masonry
-			itemSelector: '.box'
-			isFitWidth: true
+  	$('#pins').masonry
+    	itemSelector: '.box'
+    	isFitWidth: true
