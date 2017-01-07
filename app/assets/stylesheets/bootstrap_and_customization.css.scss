@@ -17,6 +17,8 @@ $jumbotron-bg: #ecf0f1;
 .navbar-brand {
      font-weight: bold;
 }
-@import 'bootstrap';
-@import 'bootstrap-sprockets';
+
+
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
