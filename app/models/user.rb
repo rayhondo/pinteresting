@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
   has_many :pins
 
-  validates :name, presence: true
+  validates :handle, presence: true
 
 end
