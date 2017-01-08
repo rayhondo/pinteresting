@@ -53,6 +53,17 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.sendgrid.net',
+    port: 587,
+    domain: 'localhost',
+    authentication: “plain”,
+    enable_starttls_auto: true,
+    user_name: 'app57049954@heroku.com',
+    password: 'ger58vt10985'
+  }
 
   config.paperclip_defaults = {
     :storage => :s3,
