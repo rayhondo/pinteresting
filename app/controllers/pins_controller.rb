@@ -39,6 +39,20 @@ class PinsController < ApplicationController
       redirect_to pins_url, notice: 'Pin was successfully destroyed.'
   end
 
+  def upvote
+    @pin = Pin.find(params[:pin_id])
+    @pin.upvote_by current_user
+    redirect_to :back
+    @pin.vote_by voter: current_user, :duplicate => true
+  end
+
+  def downvote
+    @pin = Pin.find(params[:pin_id])
+    @pin.downvote_by current_user
+    redirect_to :back
+    @pin.vote_by voter: current_user, :duplicate => true
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pin

@@ -37,6 +37,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
 gem 'sendgrid-ruby'
+gem 'acts_as_votable', '~> 0.10.0'
 
 
 group :development, :test do
